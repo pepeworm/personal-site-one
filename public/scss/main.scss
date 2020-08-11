@@ -1,6 +1,8 @@
 @import "./head", "./navbar", "./variable";
 
 body {
+    transition: opacity 500ms ease-in 100ms;
+    opacity: 1;
     font-family: "Montserrat", sans-serif;
     text-align: center;
     margin: 0;

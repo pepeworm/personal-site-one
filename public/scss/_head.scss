@@ -1,7 +1,46 @@
 @import "./variable";
-
+    
 .head-container {
+    h1 {
+        margin: 0 0 0.8rem;
+    }
+
     p {
         color: $seeThroughWhite;
+    }
+
+    a {
+        color: #fff;
+
+        i {
+            margin-top: 3.5rem;
+        }
+    }
+
+    .description {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .text-delete {
+        margin-left: 6px;
+        color: $seeThroughWhite;   
+    }
+
+    .text-delete::after {
+        content: "";
+        border-right: 2px solid white;
+        animation: blinkCursor 800ms infinite;
+    }
+
+    @keyframes blinkCursor {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
     }
 }

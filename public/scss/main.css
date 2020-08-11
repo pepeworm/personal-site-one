@@ -1,5 +1,60 @@
+.head-container h1 {
+  margin: 0 0 0.8rem;
+}
+
 .head-container p {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.head-container a {
+  color: #fff;
+}
+
+.head-container a i {
+  margin-top: 3.5rem;
+}
+
+.head-container .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.head-container .text-delete {
+  margin-left: 6px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.head-container .text-delete::after {
+  content: "";
+  border-right: 2px solid white;
+  -webkit-animation: blinkCursor 800ms infinite;
+          animation: blinkCursor 800ms infinite;
+}
+
+@-webkit-keyframes blinkCursor {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blinkCursor {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .navbar-scroll {
@@ -58,6 +113,9 @@ nav .nav-link {
 }
 
 body {
+  -webkit-transition: opacity 500ms ease-in 100ms;
+  transition: opacity 500ms ease-in 100ms;
+  opacity: 1;
   font-family: "Montserrat", sans-serif;
   text-align: center;
   margin: 0;
