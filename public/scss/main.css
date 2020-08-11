@@ -10,7 +10,7 @@
   color: #fff;
 }
 
-.head-container .switch {
+.head-container .switch-box {
   position: relative;
   margin: 3.5rem auto 0;
   border: 3px solid rgba(255, 255, 255, 0.6);
@@ -19,19 +19,26 @@
   height: 2.8rem;
 }
 
-.head-container .switch .switch-circle {
+.head-container .switch-box .switch-circle {
   position: absolute;
+  left: 0;
   width: 1.3rem;
   height: 1.3rem;
-  background: white;
+  color: #fff;
+  background: #fff;
   border-radius: 50%;
-  cursor: pointer;
 }
 
-.head-container .switch .switch-circle:active {
-  -webkit-transition: bottom 1000ms ease-in;
-  transition: bottom 1000ms ease-in;
+.head-container .switch-box .click-switch-circle {
+  -webkit-transition: bottom 2000ms ease-in;
+  transition: bottom 2000ms ease-in;
   bottom: 0;
+}
+
+.head-container .switch-box .switch-circle-smooth-return {
+  -webkit-transition: top 2000ms ease-in;
+  transition: top 2000ms ease-in;
+  top: 0;
 }
 
 .head-container .description {

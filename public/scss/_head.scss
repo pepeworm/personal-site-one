@@ -13,7 +13,7 @@
         color: #fff;
     }
 
-    .switch {
+    .switch-box {
         position: relative;
         margin: 3.5rem auto 0;
         border: 3px solid $seeThroughWhite;
@@ -23,16 +23,22 @@
 
         .switch-circle {
             position: absolute;
+            left: 0;
             width: 1.3rem;
             height: 1.3rem;
-            background: white;
+            color: #fff;
+            background: #fff;
             border-radius: 50%;
-            cursor: pointer;
+        }
 
-            &:active {
-                transition: bottom 1000ms ease-in;
-                bottom: 0;
-            }
+        .click-switch-circle {
+            transition: bottom 2000ms ease-in;
+            bottom: 0;
+        }
+
+        .switch-circle-smooth-return {
+            transition: top 2000ms ease-in;
+            top: 0;
         }
     }
 

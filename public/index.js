@@ -16,6 +16,17 @@ window.onscroll = () => {
 const textDelete = document.querySelector(".text-delete");
 const descriptionWords = ["Web Developer", "Bot Developer"];
 
-(function textWriter() {
-    
-})();
+(function textWriter() {})();
+
+// Switch
+
+const switchCircle = document.querySelector(".switch-circle");
+
+switchCircle.addEventListener("click", () => {
+    switchCircle.classList.add("click-switch-circle");
+    setTimeout(() => {
+        switchCircle.classList.remove("click-switch-circle");
+        switchCircle.classList.add("switch-circle-smooth-return");
+    }, 500);
+    switchCircle.classList.remove("switch-circle-smooth-return");
+});
