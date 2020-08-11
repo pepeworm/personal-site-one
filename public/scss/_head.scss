@@ -1,5 +1,5 @@
 @import "./variable";
-    
+
 .head-container {
     h1 {
         margin: 0 0 0.8rem;
@@ -11,9 +11,28 @@
 
     a {
         color: #fff;
+    }
 
-        i {
-            margin-top: 3.5rem;
+    .switch {
+        position: relative;
+        margin: 3.5rem auto 0;
+        border: 3px solid $seeThroughWhite;
+        border-radius: 0.8rem;
+        width: 1.3rem;
+        height: 2.8rem;
+
+        .switch-circle {
+            position: absolute;
+            width: 1.3rem;
+            height: 1.3rem;
+            background: white;
+            border-radius: 50%;
+            cursor: pointer;
+
+            &:active {
+                transition: bottom 1000ms ease-in;
+                bottom: 0;
+            }
         }
     }
 
@@ -25,7 +44,7 @@
 
     .text-delete {
         margin-left: 6px;
-        color: $seeThroughWhite;   
+        color: $seeThroughWhite;
     }
 
     .text-delete::after {

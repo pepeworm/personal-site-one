@@ -10,8 +10,28 @@
   color: #fff;
 }
 
-.head-container a i {
-  margin-top: 3.5rem;
+.head-container .switch {
+  position: relative;
+  margin: 3.5rem auto 0;
+  border: 3px solid rgba(255, 255, 255, 0.6);
+  border-radius: 0.8rem;
+  width: 1.3rem;
+  height: 2.8rem;
+}
+
+.head-container .switch .switch-circle {
+  position: absolute;
+  width: 1.3rem;
+  height: 1.3rem;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.head-container .switch .switch-circle:active {
+  -webkit-transition: bottom 1000ms ease-in;
+  transition: bottom 1000ms ease-in;
+  bottom: 0;
 }
 
 .head-container .description {

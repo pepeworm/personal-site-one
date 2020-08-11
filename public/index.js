@@ -14,12 +14,8 @@ window.onscroll = () => {
 // Description text writer effect
 
 const textDelete = document.querySelector(".text-delete");
-const descriptionWords = ["Web Developer", "Bot Developer"]
+const descriptionWords = ["Web Developer", "Bot Developer"];
 
-window.onload = () => {
-    textDelete.textContent = descriptionWords[0];
-}
-
-(function typeWriter() {
-    for (let i = 0; i < )
+(function textWriter() {
+    
 })();
