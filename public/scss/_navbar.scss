@@ -1,0 +1,45 @@
+@import "./variable";
+
+.navbar-scroll {
+    transition: background 500ms ease-in;
+    background: $seeThroughBlack;
+}
+
+nav {
+    padding: 0.8rem 4rem;
+    margin: 0 0 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        display: inline-block;
+        margin-left: auto;
+
+        li {
+            display: inline;
+            margin: 0 0.8rem;
+        }
+    }
+
+    a.nav-link {
+        color: $seeThroughWhite;
+    }
+
+    .logo {
+        font-size: 2.5ch;
+        color: $seeThroughWhite;
+    }
+
+    .nav-link {
+        font-size: 1.8ch;
+    }
+}

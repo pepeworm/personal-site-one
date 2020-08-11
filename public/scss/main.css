@@ -1,0 +1,85 @@
+.head-container p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.navbar-scroll {
+  -webkit-transition: background 500ms ease-in;
+  transition: background 500ms ease-in;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+nav {
+  padding: 0.8rem 4rem;
+  margin: 0 0 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+  margin-left: auto;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 0.8rem;
+}
+
+nav a.nav-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+nav .logo {
+  font-size: 2.5ch;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+nav .nav-link {
+  font-size: 1.8ch;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#ff416c), to(#ff4b2b));
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: #fff;
+}
+
+h1 {
+  font-size: 7ch;
+}
+
+p {
+  font-size: 3ch;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 8rem;
+  height: 8rem;
+}
+/*# sourceMappingURL=main.css.map */

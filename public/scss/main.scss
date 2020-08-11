@@ -1,0 +1,26 @@
+@import "./head", "./navbar", "./variable";
+
+body {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin: 0;
+    background: $burningOrangeBgColor;
+    color: #fff;
+}
+
+h1 {
+    font-size: 7ch;
+}
+
+p {
+    font-size: 3ch;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 8rem;
+    height: 8rem;
+}
