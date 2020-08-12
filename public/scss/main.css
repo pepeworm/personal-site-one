@@ -54,34 +54,58 @@
           flex-direction: row;
 }
 
-.head-container .text-delete {
+.head-container .text {
   margin-left: 6px;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.head-container .text-delete::after {
-  content: "";
-  border-right: 2px solid white;
-  -webkit-animation: blinkCursor 800ms infinite;
-          animation: blinkCursor 800ms infinite;
+.head-container .cursor {
+  display: inline-block;
+  background: white;
+  width: 1px;
+  -webkit-animation: blinkCursor 700ms infinite;
+          animation: blinkCursor 700ms infinite;
 }
 
 @-webkit-keyframes blinkCursor {
   0% {
-    opacity: 0;
+    background: white;
+  }
+  49% {
+    background: white;
+  }
+  50% {
+    background: transparent;
+  }
+  99% {
+    background: transparent;
   }
   100% {
-    opacity: 1;
+    background: white;
   }
 }
 
 @keyframes blinkCursor {
   0% {
-    opacity: 0;
+    background: white;
+  }
+  49% {
+    background: white;
+  }
+  50% {
+    background: transparent;
+  }
+  99% {
+    background: transparent;
   }
   100% {
-    opacity: 1;
+    background: white;
   }
+}
+
+.head-container .cursor-typing {
+  -webkit-animation: none;
+          animation: none;
 }
 
 .navbar-scroll {

@@ -13,32 +13,7 @@ window.onscroll = () => {
 
 // Description text writer effect
 
-const textDelete = document.querySelector(".text-delete");
-const descriptionWords = ["Web Developer", "Bot Developer"];
-
-let count = 0; 
-let index = 0;
-
-let currentText = ``;
-let letter = ``;
-
-(function typeWriter() {
-    if (count === descriptionWords.length) {
-        count = 0;
-    }
-
-    currentText = descriptionWords[count];
-    
-    letter = currentText.slice(0, ++index);
-
-    textDelete.textContent = letter;
-
-    if (letter.length === currentText.length) {
-        count++;
-        index = 0;
-    }
-    setTimeout(typeWriter, 200);
-})();
+const text = 
 
 // Switch
 

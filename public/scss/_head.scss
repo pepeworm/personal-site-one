@@ -48,24 +48,41 @@
         flex-direction: row;
     }
 
-    .text-delete {
+    .text {
         margin-left: 6px;
         color: $seeThroughWhite;
     }
 
-    .text-delete::after {
-        content: "";
-        border-right: 2px solid white;
-        animation: blinkCursor 800ms infinite;
+    .cursor {
+        display: inline-block;
+        background: white;
+        width: 1px;
+        animation: blinkCursor 700ms infinite;
     }
 
     @keyframes blinkCursor {
         0% {
-            opacity: 0;
+            background: white;
+        }
+
+        49% {
+            background: white;
+        }
+
+        50% {
+            background: transparent;
+        }
+
+        99% {
+            background: transparent;
         }
 
         100% {
-            opacity: 1;
+            background: white;
         }
+    }
+
+    .cursor-typing {
+        animation: none;
     }
 }
