@@ -86,6 +86,10 @@ const switchBoxFill = () => {
     switchBox.classList.add("switch-bg");
 };
 
+const switchBoxUnfill = () => {
+    switchBox.classList.remove("switch-bg");
+}
+
 // Smooth Scroll
 
 const scroll = new SmoothScroll('a[href*="#"]', {
