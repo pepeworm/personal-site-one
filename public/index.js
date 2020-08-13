@@ -13,7 +13,59 @@ window.onscroll = () => {
 
 // Description text writer effect
 
-const text = 
+const text = document.querySelector(".text");
+const cursor = document.querySelector(".cursor");
+
+const textMsg = ["Web Developer", "Bot Developer"];
+
+const typingDelay = 200;
+const erasingDelay = 100;
+const newTextDelay = 2000;
+
+let wordIndex = 0;
+let letterIndex = 0;
+
+window.onload = () => {
+    setTimeout(type, 250);
+};
+
+const type = () => {
+    if (letterIndex < textMsg[wordIndex].length) {
+        if (!cursor.classList.contains("cursor-typing")) {
+            cursor.classList.add("cursor-typing");
+        }
+
+        text.textContent += textMsg[wordIndex].charAt(letterIndex);
+        letterIndex++;
+
+        setTimeout(type, typingDelay);
+    } else {
+        cursor.classList.remove("cursor-typing");
+        setTimeout(deleteText, newTextDelay);
+    }
+};
+
+const deleteText = () => {
+    if (letterIndex > 0) {
+        if (!cursor.classList.contains("cursor-typing")) {
+            cursor.classList.add("cursor-typing");
+        }
+
+        text.textContent = textMsg[wordIndex].slice(0, letterIndex - 1);
+        letterIndex--;
+
+        setTimeout(deleteText, erasingDelay);
+    } else {
+        cursor.classList.remove("cursor-typing");
+        wordIndex++;
+        if (wordIndex >= textMsg.length) {
+            wordIndex = 0;
+        }
+        if (textMsg.length) {
+            setTimeout(type, typingDelay);
+        }
+    }
+};
 
 // Switch
 
