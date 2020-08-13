@@ -69,13 +69,24 @@ const deleteText = () => {
 
 // Switch
 
+const switchBox = document.querySelector(".switch-box");
 const switchCircle = document.querySelector(".switch-circle");
 
 switchCircle.addEventListener("click", () => {
     switchCircle.classList.add("click-switch-circle");
+    switchBoxFill();
     setTimeout(() => {
         switchCircle.classList.remove("click-switch-circle");
         switchCircle.classList.add("switch-circle-smooth-return");
+        switchBoxUnfill();
     }, 500);
     switchCircle.classList.remove("switch-circle-smooth-return");
 });
+
+const switchBoxFill = () => {
+    switchBox.classList.add("switch-bg");
+}
+
+const switchBoxUnfill = () => {
+    switchBox.classList.remove("switch-bg");
+}
