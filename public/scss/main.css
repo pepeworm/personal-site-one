@@ -1,5 +1,5 @@
 .head-container {
-  margin: 0 0 9rem 0;
+  margin: 0 0 9.5rem 0;
 }
 
 .head-container h1 {
@@ -177,8 +177,7 @@ nav .nav-link {
   position: relative;
 }
 
-#about .top-wave,
-#about .bottom-wave {
+#about .top-wave {
   width: 100%;
   position: absolute;
 }

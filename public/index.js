@@ -50,7 +50,6 @@ const deleteText = () => {
         if (!cursor.classList.contains("cursor-typing")) {
             cursor.classList.add("cursor-typing");
         }
-
         text.textContent = textMsg[wordIndex].slice(0, letterIndex - 1);
         letterIndex--;
 
@@ -85,8 +84,11 @@ switchCircle.addEventListener("click", () => {
 
 const switchBoxFill = () => {
     switchBox.classList.add("switch-bg");
-}
+};
 
-const switchBoxUnfill = () => {
-    switchBox.classList.remove("switch-bg");
-}
+// Smooth Scroll
+
+const scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 500,
+    speedAsDuration: true,
+});
