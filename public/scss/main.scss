@@ -14,6 +14,10 @@ h1 {
     font-size: 7ch;
 }
 
+h2 {
+    font-size: 6ch;
+}
+
 p {
     font-size: 3ch;
 }
@@ -25,4 +29,14 @@ a {
 img {
     width: 8rem;
     height: 8rem;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+a.btn {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: background 300ms ease-in;
 }

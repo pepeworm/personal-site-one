@@ -183,10 +183,7 @@ nav .nav-link {
 
 #about .top-wave {
   width: 100%;
-  position: absolute;
-}
-
-#about .top-wave {
+  position: relative;
   height: 143px;
   top: 0;
   background: url("../images/about-top-wave.png");
@@ -203,8 +200,8 @@ nav .nav-link {
   top: 0;
   left: 0;
   opacity: 0.4;
-  -webkit-animation: topWaveMovementContinue 10s linear infinite;
-          animation: topWaveMovementContinue 10s linear infinite;
+  -webkit-animation: topWaveMovementContinue 12s linear infinite;
+          animation: topWaveMovementContinue 12s linear infinite;
 }
 
 #about .top-wave::after {
@@ -216,8 +213,8 @@ nav .nav-link {
   top: 0;
   left: 0;
   opacity: 0.6;
-  -webkit-animation: topWaveMovementContinue 11s linear infinite;
-          animation: topWaveMovementContinue 11s linear infinite;
+  -webkit-animation: topWaveMovementContinue 15s linear infinite;
+          animation: topWaveMovementContinue 15s linear infinite;
   -webkit-animation-delay: -5000ms;
           animation-delay: -5000ms;
 }
@@ -258,6 +255,61 @@ nav .nav-link {
   }
 }
 
+#about .about-content {
+  background-color: #fff;
+  padding: 3% 5%;
+  color: #ff464b;
+}
+
+#about .about-content h2 {
+  margin: 1.5rem 0 6rem 0;
+}
+
+#about .about-content .description {
+  margin-bottom: 2rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#about .about-content .description p {
+  width: 80%;
+  margin-top: 5rem;
+  margin-right: auto;
+  display: inline-block;
+  font-size: 1.9rem;
+  margin: 2.5rem auto;
+}
+
+#about .about-content .description img.profile-pic {
+  display: inline-block;
+  width: 8.5rem;
+  height: 8.5rem;
+  border-radius: 50%;
+  border: 2px solid #ff464b;
+  margin: 0 auto;
+}
+
+#about .about-content a.btn {
+  border: 1.5px solid #ff464b;
+  color: #ff464b;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+#about .about-content a.btn:hover {
+  background: #ff464b;
+  color: #fff;
+}
+
 body {
   -webkit-transition: opacity 500ms ease-in 100ms;
   transition: opacity 500ms ease-in 100ms;
@@ -274,6 +326,10 @@ h1 {
   font-size: 7ch;
 }
 
+h2 {
+  font-size: 6ch;
+}
+
 p {
   font-size: 3ch;
 }
@@ -285,5 +341,16 @@ a {
 img {
   width: 8rem;
   height: 8rem;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+a.btn {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  -webkit-transition: background 300ms ease-in;
+  transition: background 300ms ease-in;
 }
 /*# sourceMappingURL=main.css.map */

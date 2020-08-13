@@ -7,10 +7,7 @@
 
     .top-wave {
         width: 100%;
-        position: absolute;
-    }
-
-    .top-wave {
+        position: relative;
         height: 143px;
         top: 0;
         background: url("../images/about-top-wave.png");
@@ -19,13 +16,13 @@
         &::before {
             @include waveBehind();
             opacity: 0.4;
-            animation: topWaveMovementContinue 10s linear infinite;
+            animation: topWaveMovementContinue 12s linear infinite;
         }
 
         &::after {
             @include waveBehind();
             opacity: 0.6;
-            animation: topWaveMovementContinue 11s linear infinite;
+            animation: topWaveMovementContinue 15s linear infinite;
             animation-delay: -5000ms;
         }
     }
@@ -52,13 +49,51 @@
 
     // Main content for About section
 
-    // .about-content {
-    //     background-color: #fff;
-    //     padding: 3% 5%;
-    //     color: #ff464b;
+    .about-content {
+        background-color: #fff;
+        padding: 3% 5%;
+        color: $burningOrange;
 
-    //     h2 {
-    //         font-size: 3rem;
-    //     }
-    // }
+        h2 {
+            margin: 1.5rem 0 6rem 0;
+        }
+
+        .description {
+            margin-bottom: 2rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            p {
+                width: 80%;
+                margin-top: 5rem;
+                margin-right: auto;
+                display: inline-block;
+                font-size: 1.9rem;
+                margin: 2.5rem auto;
+            }
+
+            img.profile-pic {
+                display: inline-block;
+                width: 8.5rem;
+                height: 8.5rem;
+                border-radius: 50%;
+                border: 2px solid $burningOrange;
+                margin: 0 auto;
+            }
+        }
+
+        a.btn {
+            border: 1.5px solid $burningOrange;
+            color: $burningOrange;
+            font-weight: 500;
+            font-size: 1.2rem;
+
+            &:hover {
+                background: $burningOrange;
+                color: #fff;
+            }
+        }
+    }
 }
