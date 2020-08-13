@@ -213,8 +213,8 @@ nav .nav-link {
   top: 0;
   left: 0;
   opacity: 0.6;
-  -webkit-animation: topWaveMovementContinue 15s linear infinite;
-          animation: topWaveMovementContinue 15s linear infinite;
+  -webkit-animation: topWaveMovementContinue 13s linear infinite;
+          animation: topWaveMovementContinue 13s linear infinite;
   -webkit-animation-delay: -5000ms;
           animation-delay: -5000ms;
 }
@@ -253,6 +253,15 @@ nav .nav-link {
   100% {
     background-position: 0;
   }
+}
+
+#about .bottom-wave {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  height: 143px;
+  top: 0;
 }
 
 #about .about-content {
@@ -294,7 +303,6 @@ nav .nav-link {
   width: 8.5rem;
   height: 8.5rem;
   border-radius: 50%;
-  border: 2px solid #ff464b;
   margin: 0 auto;
 }
 
@@ -308,6 +316,95 @@ nav .nav-link {
 #about .about-content a.btn:hover {
   background: #ff464b;
   color: #fff;
+}
+
+#about .about-content .about-blob-one {
+  width: 19rem;
+  top: 20%;
+  left: 3%;
+  -webkit-animation: blobMovementOne 3500ms infinite;
+          animation: blobMovementOne 3500ms infinite;
+}
+
+@-webkit-keyframes blobMovementOne {
+  0% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    top: 21%;
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    top: 20%;
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    top: 21%;
+  }
+}
+
+@keyframes blobMovementOne {
+  0% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    top: 21%;
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    top: 20%;
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    top: 21%;
+  }
+}
+
+#about .about-content .about-blob-two {
+  z-index: 10;
+  width: 15rem;
+  bottom: 8%;
+  right: 3%;
+  -webkit-animation: blobMovementTwo 3500ms infinite;
+          animation: blobMovementTwo 3500ms infinite;
+}
+
+@-webkit-keyframes blobMovementTwo {
+  0% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    bottom: 9%;
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    bottom: 8%;
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    bottom: 9%;
+  }
+}
+
+@keyframes blobMovementTwo {
+  0% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    bottom: 9%;
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    bottom: 8%;
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    bottom: 9%;
+  }
 }
 
 body {
@@ -352,5 +449,9 @@ a.btn {
   border-radius: 0.5rem;
   -webkit-transition: background 300ms ease-in;
   transition: background 300ms ease-in;
+}
+
+.blob {
+  position: absolute;
 }
 /*# sourceMappingURL=main.css.map */

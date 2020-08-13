@@ -22,7 +22,7 @@
         &::after {
             @include waveBehind();
             opacity: 0.6;
-            animation: topWaveMovementContinue 15s linear infinite;
+            animation: topWaveMovementContinue 13s linear infinite;
             animation-delay: -5000ms;
         }
     }
@@ -45,6 +45,16 @@
         100% {
             background-position: 0;
         }
+    }
+
+    // Bottom Wave
+
+    .bottom-wave {
+        box-sizing: border-box;
+        width: 100%;
+        position: relative;
+        height: 143px;
+        top: 0;
     }
 
     // Main content for About section
@@ -79,7 +89,6 @@
                 width: 8.5rem;
                 height: 8.5rem;
                 border-radius: 50%;
-                border: 2px solid $burningOrange;
                 margin: 0 auto;
             }
         }
@@ -93,6 +102,57 @@
             &:hover {
                 background: $burningOrange;
                 color: #fff;
+            }
+        }
+
+        .about-blob-one {
+            width: 19rem;
+            top: 20%;
+            left: 3%;
+
+            animation: blobMovementOne 3500ms infinite;
+        }
+
+        @keyframes blobMovementOne {
+            0% {
+                transform: scale(1.05);
+                top: 21%;
+            }
+
+            50% {
+                transform: scale(1);
+                top: 20%;
+            }
+
+            100% {
+                transform: scale(1.05);
+                top: 21%;
+            }
+        }
+
+        .about-blob-two {
+            z-index: 10;
+            width: 15rem;
+            bottom: 8%;
+            right: 3%;
+
+            animation: blobMovementTwo 3500ms infinite;
+        }
+        
+        @keyframes blobMovementTwo {
+            0% {
+                transform: scale(1.05);
+                bottom: 9%;
+            }
+
+            50% {
+                transform: scale(1);
+                bottom: 8%;
+            }
+
+            100% {
+                transform: scale(1.05);
+                bottom: 9%;
             }
         }
     }
