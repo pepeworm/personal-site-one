@@ -1,3 +1,7 @@
+.head-container {
+  margin: 0 0 9rem 0;
+}
+
 .head-container h1 {
   margin: 0 0 0.8rem;
 }
@@ -167,6 +171,88 @@ nav .logo {
 
 nav .nav-link {
   font-size: 1.8ch;
+}
+
+#about {
+  position: relative;
+}
+
+#about .top-wave,
+#about .bottom-wave {
+  width: 100%;
+  position: absolute;
+}
+
+#about .top-wave {
+  height: 143px;
+  top: 0;
+  background: url("../images/about-top-wave.png");
+  -webkit-animation: topWaveMovement 10s linear infinite;
+          animation: topWaveMovement 10s linear infinite;
+}
+
+#about .top-wave::before {
+  content: "";
+  width: 100%;
+  height: 143px;
+  background: url("../images/about-top-wave.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+  -webkit-animation: topWaveMovementContinue 10s linear infinite;
+          animation: topWaveMovementContinue 10s linear infinite;
+}
+
+#about .top-wave::after {
+  content: "";
+  width: 100%;
+  height: 143px;
+  background: url("../images/about-top-wave.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+  -webkit-animation: topWaveMovementContinue 11s linear infinite;
+          animation: topWaveMovementContinue 11s linear infinite;
+  -webkit-animation-delay: -5000ms;
+          animation-delay: -5000ms;
+}
+
+@-webkit-keyframes topWaveMovement {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 1360px;
+  }
+}
+
+@keyframes topWaveMovement {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 1360px;
+  }
+}
+
+@-webkit-keyframes topWaveMovementContinue {
+  0% {
+    background-position: 1360px;
+  }
+  100% {
+    background-position: 0;
+  }
+}
+
+@keyframes topWaveMovementContinue {
+  0% {
+    background-position: 1360px;
+  }
+  100% {
+    background-position: 0;
+  }
 }
 
 body {

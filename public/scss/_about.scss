@@ -1,0 +1,57 @@
+@import "./variable", "./mixin";
+
+#about {
+    position: relative;
+
+    // Wave
+
+    .top-wave,
+    .bottom-wave {
+        width: 100%;
+        position: absolute;
+    }
+
+    .top-wave {
+        height: 143px;
+        top: 0;
+        background: url("../images/about-top-wave.png");
+        animation: topWaveMovement 10s linear infinite;
+
+        &::before {
+            @include waveBehind();
+            opacity: 0.4;
+            animation: topWaveMovementContinue 10s linear infinite;
+        }
+
+        &::after {
+            @include waveBehind();
+            opacity: 0.6;
+            animation: topWaveMovementContinue 11s linear infinite;
+            animation-delay: -5000ms;
+        }
+    }
+
+    @keyframes topWaveMovement {
+        0% {
+            background-position: 0;
+        }
+
+        100% {
+            background-position: 1360px;
+        }
+    }
+
+    @keyframes topWaveMovementContinue {
+        0% {
+            background-position: 1360px;
+        }
+
+        100% {
+            background-position: 0;
+        }
+    }
+
+    // Main content for About section
+
+    .about-content {}
+}

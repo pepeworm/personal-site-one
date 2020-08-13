@@ -1,6 +1,8 @@
-@import "./variable";
+@import "./variable", "./mixin";
 
 .head-container {
+    margin: 0 0 9rem 0;
+
     // General
 
     h1 {
