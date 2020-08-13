@@ -88,7 +88,7 @@ const switchBoxFill = () => {
 
 const switchBoxUnfill = () => {
     switchBox.classList.remove("switch-bg");
-}
+};
 
 // Smooth Scroll
 
@@ -96,3 +96,7 @@ const scroll = new SmoothScroll('a[href*="#"]', {
     speed: 500,
     speedAsDuration: true,
 });
+
+// Scroll Spy
+
+var spy = new Gumshoe("#navbar ul li a");

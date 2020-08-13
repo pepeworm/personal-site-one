@@ -30,6 +30,10 @@ nav {
         }
     }
 
+    li.active a {
+        color: #fff;
+    }
+
     a.nav-link {
         color: $seeThroughWhite;
     }

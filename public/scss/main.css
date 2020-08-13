@@ -160,6 +160,10 @@ nav ul li {
   margin: 0 0.8rem;
 }
 
+nav li.active a {
+  color: #fff;
+}
+
 nav a.nav-link {
   color: rgba(255, 255, 255, 0.6);
 }
