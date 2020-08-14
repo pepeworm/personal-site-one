@@ -409,6 +409,10 @@ nav .nav-link {
   }
 }
 
+#projects {
+  position: relative;
+}
+
 #projects h2 {
   margin: 5rem 0 0;
 }
@@ -586,6 +590,11 @@ nav .nav-link {
     background: white;
     color: #ff464b;
   }
+}
+
+#projects .left img,
+#projects .right img {
+  border: 1px solid white;
 }
 
 body {

@@ -1,6 +1,7 @@
 @import "./variable", "./mixin";
 
 #projects {
+    position: relative;
 
     // General
 
@@ -160,5 +161,16 @@
                 }
             }
         }
+    }
+
+    .left,
+    .right {
+        img {
+            border: 1px solid white;
+        }
+    }
+
+    .projects-bottom-wave {
+        
     }
 }
