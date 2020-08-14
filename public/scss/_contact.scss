@@ -1,0 +1,69 @@
+@import "./variable", "./mixin";
+
+#contact {
+    color: $burningOrange;
+    background: white;
+    padding: 3% 5%;
+    position: relative;
+
+    .contact-body {
+
+        h2 {
+            margin: 3rem 0 0;
+        }
+
+        form {
+            background: #3f3d56;
+            display: inline-block;
+            margin: 2rem 0 0;
+            padding: 4rem 3rem;
+            border-radius: 0.5rem;
+
+            .field {
+                display: block;
+                margin-bottom: 1.5rem;
+
+                &.bottom-field {
+                    margin-bottom: 2rem;
+                }
+
+                input {
+                    border-radius: 0.3rem;
+                    padding: 0.6rem 0.5rem;
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 1rem;
+                    border-bottom: 2px solid $burningOrange;
+                    border: 1px solid white;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+
+        .btn {
+            font-family: "Montserrat", sans-serif;
+            display: block;
+            margin: 0 auto;
+            padding: 0.6rem 0.8rem;
+            font-weight: 500;
+            font-size: 1.2rem;
+            color: white;
+            cursor: pointer;
+            background: $burningOrange;
+            border: none;
+            border-radius: 0.3rem;
+            width: 100%;
+        }
+    }
+
+    .contact-bottom-wave {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        height: 2.4rem;
+    }
+}

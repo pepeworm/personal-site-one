@@ -100,3 +100,11 @@ const scroll = new SmoothScroll('a[href*="#"]', {
 // Scroll Spy
 
 var spy = new Gumshoe("#navbar ul li a");
+
+// Contact form :focus functionality
+
+const form = document.querySelectorAll(".contactField");
+
+for (let i = 0; i < form.length; i++) {
+    
+}
