@@ -256,6 +256,7 @@ nav .nav-link {
 }
 
 #about .bottom-wave {
+  z-index: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
@@ -319,6 +320,7 @@ nav .nav-link {
 }
 
 #about .about-content .about-blob-one {
+  z-index: 0;
   width: 19rem;
   top: 20%;
   left: 3%;
@@ -407,6 +409,185 @@ nav .nav-link {
   }
 }
 
+#projects h2 {
+  margin: 5rem 0 0;
+}
+
+#projects h3 {
+  margin: 0 0 1rem 0;
+}
+
+#projects p {
+  margin: 2rem 0 7rem 0;
+}
+
+#projects hr {
+  margin: 6rem auto;
+  width: 10%;
+  border-style: dotted;
+  border-width: 0 0 0.5rem 0;
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+#projects .project-container.right {
+  padding: 0 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#projects .project-container.right img {
+  display: inline-block;
+  width: 23rem;
+  height: 12rem;
+  margin-right: 3rem;
+}
+
+#projects .project-container.right .project-container-body {
+  margin-left: 1.5rem;
+  text-align: left;
+}
+
+#projects .project-container.right .project-container-body p {
+  display: inline-block;
+  margin: 0 0 1.5rem 0;
+  font-size: 1.3rem;
+}
+
+#projects .project-container.right .project-container-body p.site-description {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
+#projects .project-container.right .project-container-body p.lang-used,
+#projects .project-container.right .project-container-body p .lang {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#projects .project-container.right .project-container-body a {
+  display: inline-block;
+  color: white;
+  font-size: 1.3rem;
+  border: 1px solid white;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.3rem;
+  margin: 0 0.8rem 0 0;
+}
+
+#projects .project-container.right .project-container-body a.btn {
+  -webkit-transition: color 200ms linear;
+  transition: color 200ms linear;
+}
+
+#projects .project-container.right .project-container-body a.btn:hover {
+  background: white;
+  color: #ff464b;
+}
+
+@-webkit-keyframes projectBtnHover {
+  0% {
+    background: transparent;
+    color: white;
+  }
+  100% {
+    background: white;
+    color: #ff464b;
+  }
+}
+
+@keyframes projectBtnHover {
+  0% {
+    background: transparent;
+    color: white;
+  }
+  100% {
+    background: white;
+    color: #ff464b;
+  }
+}
+
+#projects .project-container.left {
+  padding: 0 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#projects .project-container.left img {
+  display: inline-block;
+  width: 23rem;
+  height: 12rem;
+  margin-left: 3rem;
+}
+
+#projects .project-container.left .project-container-body {
+  margin-right: 1.5rem;
+  text-align: right;
+}
+
+#projects .project-container.left .project-container-body p {
+  display: inline-block;
+  margin: 0 0 1.5rem 0;
+  font-size: 1.3rem;
+}
+
+#projects .project-container.left .project-container-body p.site-description {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
+#projects .project-container.left .project-container-body p.lang-used,
+#projects .project-container.left .project-container-body p .lang {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#projects .project-container.left .project-container-body a {
+  display: inline-block;
+  color: white;
+  font-size: 1.3rem;
+  border: 1px solid white;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.3rem;
+  margin: 0 0 0 0.8rem;
+}
+
+#projects .project-container.left .project-container-body a.btn {
+  -webkit-transition: color 200ms linear;
+  transition: color 200ms linear;
+}
+
+#projects .project-container.left .project-container-body a.btn:hover {
+  background: white;
+  color: #ff464b;
+}
+
+@keyframes projectBtnHover {
+  0% {
+    background: transparent;
+    color: white;
+  }
+  100% {
+    background: white;
+    color: #ff464b;
+  }
+}
+
 body {
   -webkit-transition: opacity 500ms ease-in 100ms;
   transition: opacity 500ms ease-in 100ms;
@@ -425,6 +606,10 @@ h1 {
 
 h2 {
   font-size: 6ch;
+}
+
+h3 {
+  font-size: 3.5ch;
 }
 
 p {

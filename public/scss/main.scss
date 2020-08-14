@@ -1,4 +1,4 @@
-@import "./head", "./navbar", "./about", "./variable", "./mixin";
+@import "./head", "./navbar", "./about", "./projects", "./variable", "./mixin";
 
 body {
     transition: opacity 500ms ease-in 100ms;
@@ -16,6 +16,10 @@ h1 {
 
 h2 {
     font-size: 6ch;
+}
+
+h3 {
+    font-size: 3.5ch;
 }
 
 p {

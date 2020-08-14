@@ -50,6 +50,7 @@
     // Bottom Wave
 
     .bottom-wave {
+        z-index: 0;
         box-sizing: border-box;
         width: 100%;
         position: relative;
@@ -105,7 +106,10 @@
             }
         }
 
+        // Blobs
+
         .about-blob-one {
+            z-index: 0;
             width: 19rem;
             top: 20%;
             left: 3%;

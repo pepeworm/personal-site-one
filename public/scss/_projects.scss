@@ -1,0 +1,164 @@
+@import "./variable", "./mixin";
+
+#projects {
+
+    // General
+
+    h2 {
+        margin: 5rem 0 0;
+    }
+
+    h3 {
+        margin: 0 0 1rem 0;
+    }
+
+    p {
+        margin: 2rem 0 7rem 0;
+    }
+
+    hr {
+        margin: 6rem auto;
+        width: 10%;
+        border-style: dotted;
+        border-width: 0 0 0.5rem 0;
+        border-color: $seeThroughWhite;
+    }
+
+    // Right Project Container
+
+    .project-container.right {
+        padding: 0 8rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        img {
+            display: inline-block;
+            width: 23rem;
+            height: 12rem;
+            margin-right: 3rem;
+        }
+
+        .project-container-body {
+            margin-left: 1.5rem;
+            text-align: left;
+
+            p {
+                display: inline-block;
+                margin: 0 0 1.5rem 0;
+                font-size: 1.3rem;
+
+                &.site-description {
+                    margin: 0 0 0.5rem 0;
+                    font-size: 1.45rem;
+                    font-weight: 500;
+                }
+
+                &.lang-used,
+                .lang {
+                    color: rgba(white, 0.8);
+                }
+            }
+
+            a {
+                display: inline-block;
+                color: white;
+                font-size: 1.3rem;
+                border: 1px solid white;
+                padding: 0.5rem 0.8rem;
+                border-radius: 0.3rem;
+                margin: 0 0.8rem 0 0;
+
+                &.btn {
+                    transition: color 200ms linear;
+                }
+
+                &.btn:hover {
+                    background: white;
+                    color: $burningOrange;
+                }
+            }
+
+            @keyframes projectBtnHover {
+                0% {
+                    background: transparent;
+                    color: white;
+                }
+
+                100% {
+                    background: white;
+                    color: $burningOrange;
+                }
+            }
+        }
+    }
+
+    // Left Project Container 
+
+    .project-container.left {
+        padding: 0 8rem;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+
+        img {
+            display: inline-block;
+            width: 23rem;
+            height: 12rem;
+            margin-left: 3rem;
+        }
+
+        .project-container-body {
+            margin-right: 1.5rem;
+            text-align: right;
+
+            p {
+                display: inline-block;
+                margin: 0 0 1.5rem 0;
+                font-size: 1.3rem;
+
+                &.site-description {
+                    margin: 0 0 0.5rem 0;
+                    font-size: 1.45rem;
+                    font-weight: 500;
+                }
+
+                &.lang-used,
+                .lang {
+                    color: rgba(white, 0.8);
+                }
+            }
+
+            a {
+                display: inline-block;
+                color: white;
+                font-size: 1.3rem;
+                border: 1px solid white;
+                padding: 0.5rem 0.8rem;
+                border-radius: 0.3rem;
+                margin: 0 0 0 0.8rem;
+
+                &.btn {
+                    transition: color 200ms linear;
+                }
+
+                &.btn:hover {
+                    background: white;
+                    color: $burningOrange;
+                }
+            }
+
+            @keyframes projectBtnHover {
+                0% {
+                    background: transparent;
+                    color: white;
+                }
+
+                100% {
+                    background: white;
+                    color: $burningOrange;
+                }
+            }
+        }
+    }
+}
