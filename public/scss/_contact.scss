@@ -66,4 +66,31 @@
         left: 0;
         height: 2.4rem;
     }
+
+    .contact-blob-one {
+        position: absolute;
+        display: inline-block;
+        width: 16rem;
+        top: 10%;
+        left: 2%;
+
+        animation: contactBlobMovementOne 3500ms infinite;
+    }
+
+    @keyframes contactBlobMovementOne {
+        0% {
+            top: 10%;
+            transform: scale(1);
+        }   
+
+        50% {
+            top: 11%;
+            transform: scale(1.05);
+        }
+
+        100% {
+            top: 10%;
+            transform: scale(1);
+        }
+    }
 }

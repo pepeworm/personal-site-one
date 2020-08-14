@@ -489,6 +489,8 @@ nav .nav-link {
 }
 
 #projects .project-container.right .project-container-body a.btn {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-transition: color 200ms linear;
   transition: color 200ms linear;
 }
@@ -662,6 +664,57 @@ nav .nav-link {
   bottom: 0;
   left: 0;
   height: 2.4rem;
+}
+
+#contact .contact-blob-one {
+  position: absolute;
+  display: inline-block;
+  width: 16rem;
+  top: 10%;
+  left: 2%;
+  -webkit-animation: contactBlobMovementOne 3500ms infinite;
+          animation: contactBlobMovementOne 3500ms infinite;
+}
+
+@-webkit-keyframes contactBlobMovementOne {
+  0% {
+    top: 10%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    top: 11%;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  100% {
+    top: 10%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes contactBlobMovementOne {
+  0% {
+    top: 10%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    top: 11%;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  100% {
+    top: 10%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+footer#others {
+  background: #2a2a2a;
+  padding: 3% 5%;
 }
 
 body {

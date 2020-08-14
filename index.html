@@ -264,12 +264,14 @@
                 <form action="/" method="POST">
                     <div class="field top-field">
                         <input type="text" name="userName" required autocomplete="off" placeholder="Name"
-                            class="contactField">
+                            class="contactField nameField" onfocus="contactInputNameFocus()"
+                            onblur="contactInputNameBlur()">
                     </div>
 
                     <div class="field bottom-field">
                         <input type="email" name="userEmail" required autocomplete="off" placeholder="Email"
-                            class="contactField">
+                            class="contactField emailField" onfocus="contactInputEmailFocus()"
+                            onblur="contactInputEmailBlur()">
                     </div>
 
                     <button type="submit" class="btn">Let's Talk!</button>
@@ -282,12 +284,16 @@
                 </svg>
             </div>
 
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="contact-blob-one blob">
+                <path fill="rgb(255, 75, 43)" d="M53.4,-68.6C67.6,-63.2,76.5,-45.5,81.9,-27C87.4,-8.6,89.4,10.5,84.3,27.8C79.3,45.1,67.2,60.5,52,71.2C36.8,82,18.4,88,-0.2,88.2C-18.8,88.5,-37.6,83,-46,70.1C-54.5,57.2,-52.7,36.9,-56.6,19.6C-60.5,2.4,-70.2,-11.8,-70,-26C-69.8,-40.2,-59.9,-54.5,-46.6,-60.2C-33.3,-65.8,-16.6,-63,1.5,-65C19.6,-67,39.2,-74,53.4,-68.6Z" transform="translate(100 100)" />
+              </svg>
+
         </section>
 
     </div>
 
     <footer id="others">
-        
+
     </footer>
 
     <script src="./index.js"></script>

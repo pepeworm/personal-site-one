@@ -73,6 +73,7 @@
                 margin: 0 0.8rem 0 0;
 
                 &.btn {
+                    box-sizing: border-box;
                     transition: color 200ms linear;
                 }
 
