@@ -8,7 +8,7 @@
     .top-wave {
         width: 100%;
         position: relative;
-        height: 143px;
+        height: 8.9rem;
         top: 0;
         background: url("../images/about-top-wave.png");
         animation: topWaveMovement 10s linear infinite;
@@ -47,22 +47,11 @@
         }
     }
 
-    // Bottom Wave
-
-    .bottom-wave {
-        z-index: 0;
-        box-sizing: border-box;
-        width: 100%;
-        position: relative;
-        height: 143px;
-        top: 0;
-    }
-
     // Main content for About section
 
     .about-content {
         background-color: #fff;
-        padding: 3% 5%;
+        padding: 3% 5% 7% 5%;
         color: $burningOrange;
 
         h2 {
@@ -137,26 +126,26 @@
         .about-blob-two {
             z-index: 10;
             width: 15rem;
-            bottom: 8%;
+            bottom: 13%;
             right: 3%;
 
             animation: blobMovementTwo 3500ms infinite;
         }
-        
+
         @keyframes blobMovementTwo {
             0% {
                 transform: scale(1.05);
-                bottom: 9%;
+                bottom: 13%;
             }
 
             50% {
                 transform: scale(1);
-                bottom: 8%;
+                bottom: 14%;
             }
 
             100% {
                 transform: scale(1.05);
-                bottom: 9%;
+                bottom: 13%;
             }
         }
     }

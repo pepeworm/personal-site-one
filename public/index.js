@@ -121,3 +121,35 @@ const contactInputEmailFocus = () => {
 const contactInputEmailBlur = () => {
     emailForm.setAttribute("placeholder", "Email");
 };
+
+// Media Query
+
+const blobRemoveSmall = (screenWidth, width) => {
+    const blobs = document.querySelectorAll(".blob");
+    if (screen.width < width) {
+        for (let i = 0; i < blobs.length; i++) {
+            blobs[i].remove();
+        }
+    }
+}
+
+const blobRemoveSmallWidth = window.matchMedia("(max-width: 890px)");
+blobRemoveSmall(blobRemoveSmallWidth, 890);
+blobRemoveSmallWidth.addListener(blobRemoveSmall);
+
+const blobRemoveLarge = (screenWidthMin, screenWidthMax, widthMin, widthMax) => {
+    if (screen.width >= widthMin) {
+        document.querySelector(".contact-blob-one").remove();
+    } 
+    
+    if (screen.width >= widthMax) {
+        document.querySelector(".about-blob-one").remove();
+        document.querySelector(".about-blob-two").remove();
+    }
+}
+
+const blobRemoveLgMinWidth = window.matchMedia("(min-width: 1700px)");
+const blobRemoveLgMaxWidth = window.matchMedia("(min-width: 2500px)");
+blobRemoveLarge(blobRemoveLgMinWidth, blobRemoveLgMaxWidth, 1700, 2500);
+blobRemoveLgMinWidth.addListener(blobRemoveLarge);
+blobRemoveLgMaxWidth.addListener(blobRemoveLarge);

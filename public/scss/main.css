@@ -184,7 +184,7 @@ nav .nav-link {
 #about .top-wave {
   width: 100%;
   position: relative;
-  height: 143px;
+  height: 8.9rem;
   top: 0;
   background: url("../images/about-top-wave.png");
   -webkit-animation: topWaveMovement 10s linear infinite;
@@ -255,19 +255,9 @@ nav .nav-link {
   }
 }
 
-#about .bottom-wave {
-  z-index: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 100%;
-  position: relative;
-  height: 143px;
-  top: 0;
-}
-
 #about .about-content {
   background-color: #fff;
-  padding: 3% 5%;
+  padding: 3% 5% 7% 5%;
   color: #ff464b;
 }
 
@@ -367,7 +357,7 @@ nav .nav-link {
 #about .about-content .about-blob-two {
   z-index: 10;
   width: 15rem;
-  bottom: 8%;
+  bottom: 13%;
   right: 3%;
   -webkit-animation: blobMovementTwo 3500ms infinite;
           animation: blobMovementTwo 3500ms infinite;
@@ -377,17 +367,17 @@ nav .nav-link {
   0% {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
-    bottom: 9%;
+    bottom: 13%;
   }
   50% {
     -webkit-transform: scale(1);
             transform: scale(1);
-    bottom: 8%;
+    bottom: 14%;
   }
   100% {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
-    bottom: 9%;
+    bottom: 13%;
   }
 }
 
@@ -395,17 +385,17 @@ nav .nav-link {
   0% {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
-    bottom: 9%;
+    bottom: 13%;
   }
   50% {
     -webkit-transform: scale(1);
             transform: scale(1);
-    bottom: 8%;
+    bottom: 14%;
   }
   100% {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
-    bottom: 9%;
+    bottom: 13%;
   }
 }
 
@@ -664,7 +654,7 @@ nav .nav-link {
 #contact .contact-blob-one {
   position: absolute;
   display: inline-block;
-  width: 16rem;
+  width: 14rem;
   top: 10%;
   left: 2%;
   -webkit-animation: contactBlobMovementOne 3500ms infinite;
@@ -732,6 +722,20 @@ footer#others ul li.bottom-list {
 
 footer#others ul li a {
   color: #157eff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: #e8e8e8;
+}
+
+::-webkit-scrollbar-track {
+  border: 1px solid #3f3d56;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3f3d56;
+  border-radius: 5px;
 }
 
 body {
