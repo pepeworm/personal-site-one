@@ -27,6 +27,7 @@ let letterIndex = 0;
 
 window.onload = () => {
     setTimeout(type, 250);
+    scrollbarThumbBorderRadius();
 };
 
 const type = () => {
@@ -131,22 +132,27 @@ const blobRemoveSmall = (screenWidth, width) => {
             blobs[i].remove();
         }
     }
-}
+};
 
 const blobRemoveSmallWidth = window.matchMedia("(max-width: 890px)");
 blobRemoveSmall(blobRemoveSmallWidth, 890);
 blobRemoveSmallWidth.addListener(blobRemoveSmall);
 
-const blobRemoveLarge = (screenWidthMin, screenWidthMax, widthMin, widthMax) => {
+const blobRemoveLarge = (
+    screenWidthMin,
+    screenWidthMax,
+    widthMin,
+    widthMax
+) => {
     if (screen.width >= widthMin) {
         document.querySelector(".contact-blob-one").remove();
-    } 
-    
+    }
+
     if (screen.width >= widthMax) {
         document.querySelector(".about-blob-one").remove();
         document.querySelector(".about-blob-two").remove();
     }
-}
+};
 
 const blobRemoveLgMinWidth = window.matchMedia("(min-width: 1700px)");
 const blobRemoveLgMaxWidth = window.matchMedia("(min-width: 2500px)");

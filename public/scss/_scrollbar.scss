@@ -2,15 +2,10 @@
 
 ::-webkit-scrollbar {
     width: 16px;
-    background: #e8e8e8;
-}
-
-::-webkit-scrollbar-track {
-    border: 1px solid #3f3d56;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #3f3d56;
+    background: linear-gradient(180deg, #f90044, #eb3e6c);
     border-radius: 10px;
 }
 
