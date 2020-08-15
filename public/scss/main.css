@@ -725,7 +725,7 @@ footer#others ul li a {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 16px;
   background: #e8e8e8;
 }
 
@@ -735,7 +735,7 @@ footer#others ul li a {
 
 ::-webkit-scrollbar-thumb {
   background: #3f3d56;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 body {
