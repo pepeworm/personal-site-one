@@ -2,5 +2,29 @@
 
 footer#others {
     background: #2a2a2a;
-    padding: 3% 5%;
+    padding: 2% 5% 2% 5%;
+
+    p {
+        margin: 0 0 0.8rem 0;
+        font-size: 1.1rem;
+
+        &.copy {
+            font-size: 1.15rem;
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            &.bottom-list {
+                margin: 0.3rem 0 0;
+            }
+
+            a {
+                color: #157eff;
+            }
+        }
+    }
 }

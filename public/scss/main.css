@@ -608,6 +608,10 @@ nav .nav-link {
   position: relative;
 }
 
+#contact .contact-body {
+  margin-bottom: 3rem;
+}
+
 #contact .contact-body h2 {
   margin: 3rem 0 0;
 }
@@ -655,15 +659,6 @@ nav .nav-link {
   border: none;
   border-radius: 0.3rem;
   width: 100%;
-}
-
-#contact .contact-bottom-wave {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  height: 2.4rem;
 }
 
 #contact .contact-blob-one {
@@ -714,7 +709,29 @@ nav .nav-link {
 
 footer#others {
   background: #2a2a2a;
-  padding: 3% 5%;
+  padding: 2% 5% 2% 5%;
+}
+
+footer#others p {
+  margin: 0 0 0.8rem 0;
+  font-size: 1.1rem;
+}
+
+footer#others p.copy {
+  font-size: 1.15rem;
+}
+
+footer#others ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer#others ul li.bottom-list {
+  margin: 0.3rem 0 0;
+}
+
+footer#others ul li a {
+  color: #157eff;
 }
 
 body {
