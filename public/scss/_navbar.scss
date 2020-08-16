@@ -18,32 +18,77 @@ nav {
     right: 0;
     z-index: 100;
 
-    ul {
-        list-style: none;
-        padding: 0;
-        display: inline-block;
+    div#navigation {
+        position: relative;
         margin-left: auto;
 
-        li {
-            display: inline;
-            margin: 0 0.8rem;
+        ul {
+            list-style: none;
+            padding: 0;
+            display: inline-block;
+
+            li {
+                display: inline;
+                margin: 0 0.8rem;
+            }
         }
-    }
 
-    li.active a {
-        color: #fff;
-    }
+        li.active a {
+            color: #fff;
+        }
 
-    a.nav-link {
-        color: $seeThroughWhite;
+        a.nav-link {
+            color: $seeThroughWhite;
+        }
+
+        .nav-link {
+            font-size: 1.8ch;
+        }
+
+        /* Hamburger Menu */
+
+        @media (max-width: 770px) {
+            .hamburger {
+                input[type="checkbox"] {
+                    display: none;
+                }
+
+                ul {
+                    opacity: 0;
+                }
+
+                .hamburger {
+                    position: relative;
+
+                    .hamburger-icon {
+                        position: absolute;
+                        background-color: $seeThroughWhite;
+                        height: 3px;
+                        width: 30px;
+
+                        &::before,
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            top: -20px;
+                            background-color: $seeThroughWhite;
+                            height: 3px;
+                            width: 30px;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media (min-width: 771px) {
+            .hamburger {
+                display: none;
+            }
+        }
     }
 
     .logo {
         font-size: 2.5ch;
         color: $seeThroughWhite;
-    }
-
-    .nav-link {
-        font-size: 1.8ch;
     }
 }

@@ -27,7 +27,6 @@ let letterIndex = 0;
 
 window.onload = () => {
     setTimeout(type, 250);
-    scrollbarThumbBorderRadius();
 };
 
 const type = () => {
