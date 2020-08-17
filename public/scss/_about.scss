@@ -126,7 +126,7 @@
         .about-blob-two {
             z-index: 10;
             width: 15rem;
-            bottom: 13%;
+            bottom: 4%;
             right: 3%;
 
             animation: blobMovementTwo 3500ms infinite;
@@ -135,18 +135,26 @@
         @keyframes blobMovementTwo {
             0% {
                 transform: scale(1.05);
-                bottom: 13%;
+                bottom: 4%;
             }
 
             50% {
                 transform: scale(1);
-                bottom: 14%;
+                bottom: 5%;
             }
 
             100% {
                 transform: scale(1.05);
-                bottom: 13%;
+                bottom: 4%;
             }
         }
+    }
+}
+
+@media (max-width: 1050px) {    
+
+    .about-blob-one,
+    .about-blob-two {
+        display: none;
     }
 }

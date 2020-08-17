@@ -133,16 +133,19 @@ const contactInputEmailBlur = () => {
 
 // Media Query (Blob Remove)
 
-const blobRemoveSmall = (width) => {
-    const blobs = document.querySelectorAll(".blob");
-    if (screen.width < width) {
-        for (let i = 0; i < blobs.length; i++) {
-            blobs[i].remove();
-        }
-    }
-};
+// const blobRemoveSmall = (lgWidth, smWidth) => {
+//     const blobs = document.querySelectorAll(".blob");
+//     if (screen.width <= lgWidth) {
+//         document.querySelector(".about-blob-one").remove();
+//         document.querySelector(".about-blob-two").remove();
+//     } 
+    
+//     if (screen.width <= smWidth) {
+//         document.querySelector(".contact-blob-one").remove();
+//     }
+// };
 
-blobRemoveSmall(890);
+// blobRemoveSmall(1050, 900);
 
 const blobRemoveLarge = (widthMin, widthMax) => {
     if (screen.width >= widthMin) {

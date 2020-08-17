@@ -470,7 +470,7 @@
 #about .about-content .about-blob-two {
   z-index: 10;
   width: 15rem;
-  bottom: 13%;
+  bottom: 4%;
   right: 3%;
   -webkit-animation: blobMovementTwo 3500ms infinite;
           animation: blobMovementTwo 3500ms infinite;
@@ -480,17 +480,17 @@
   0% {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
-    bottom: 13%;
+    bottom: 4%;
   }
   50% {
     -webkit-transform: scale(1);
             transform: scale(1);
-    bottom: 14%;
+    bottom: 5%;
   }
   100% {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
-    bottom: 13%;
+    bottom: 4%;
   }
 }
 
@@ -498,17 +498,24 @@
   0% {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
-    bottom: 13%;
+    bottom: 4%;
   }
   50% {
     -webkit-transform: scale(1);
             transform: scale(1);
-    bottom: 14%;
+    bottom: 5%;
   }
   100% {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
-    bottom: 13%;
+    bottom: 4%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .about-blob-one,
+  .about-blob-two {
+    display: none;
   }
 }
 
@@ -807,6 +814,12 @@
     top: 10%;
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+}
+
+@media (max-width: 900px) {
+  #contact .contact-blob-one {
+    display: none;
   }
 }
 
