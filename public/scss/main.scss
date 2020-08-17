@@ -8,6 +8,11 @@ body {
     margin: 0;
     background: $burningOrangeBgColor;
     color: #fff;
+    overflow-x: hidden;
+}
+
+.body-container {
+    position: relative;
 }
 
 h1 {

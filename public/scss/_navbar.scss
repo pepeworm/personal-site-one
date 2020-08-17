@@ -5,90 +5,136 @@
     background: $seeThroughBlack;
 }
 
-nav {
-    padding: 0.8rem 4rem;
-    margin: 0 0 5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+.navbar {
+    padding: 1rem 0;
+
     position: sticky;
     top: 0;
     left: 0;
-    right: 0;
     z-index: 100;
 
-    div#navigation {
-        position: relative;
-        margin-left: auto;
+    margin-bottom: 3rem;
 
-        ul {
-            list-style: none;
-            padding: 0;
-            display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-            li {
-                display: inline;
-                margin: 0 0.8rem;
-            }
-        }
+    color: $seeThroughWhite;
 
-        li.active a {
+    // Navbar Logo
+
+    .logo {
+        font-size: 2.5ch;
+        margin: 0 2rem;
+        color: $seeThroughWhite;
+
+        &:hover {
             color: #fff;
         }
 
-        a.nav-link {
+        &:active {
             color: $seeThroughWhite;
         }
+    }
 
-        .nav-link {
-            font-size: 1.8ch;
-        }
+    // Navbar unordered list
 
-        /* Hamburger Menu */
+    .navbar-links {
+        ul {
+            margin: 0;
+            padding: 0;
 
-        @media (max-width: 770px) {
-            .hamburger {
-                input[type="checkbox"] {
-                    display: none;
-                }
+            display: flex;
 
-                ul {
-                    opacity: 0;
-                }
+            li {
+                list-style: none;
 
-                .hamburger {
-                    position: relative;
+                a {
+                    color: $seeThroughWhite;
+                    padding: 0 1rem;
 
-                    .hamburger-icon {
-                        position: absolute;
-                        background-color: $seeThroughWhite;
-                        height: 3px;
-                        width: 30px;
-
-                        &::before,
-                        &::after {
-                            content: "";
-                            position: absolute;
-                            top: -20px;
-                            background-color: $seeThroughWhite;
-                            height: 3px;
-                            width: 30px;
-                        }
+                    &:hover {
+                        color: #fff;
                     }
                 }
             }
         }
+    }
+}
 
-        @media (min-width: 771px) {
-            .hamburger {
-                display: none;
+// Hamburger Menu
+
+.hamburger {
+    cursor: pointer;
+
+    position: absolute;
+    top: 1.3rem;
+    right: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 21px;
+
+    .bar {
+        height: 3px;
+        width: 100%;
+        background: rgba(white, 0.5);
+
+        .bar-one:active, .bar-two:active, .bar-three:active {
+            animation: hamburgerCross 500ms ease-in;
+        }
+
+        @keyframes hamburgerCross {
+            0% {    
+                .bar-one {
+                    transform: rotate(0deg);
+                }
+
+                .bar-three {
+                    transform: rotate(0deg);
+                }
+            }
+
+            100% {
+                .bar-one {
+                    transform: rotate(90deg);
+                }
+
+                .bar-three {
+                    transform: rotate(-90deg);
+                }
             }
         }
     }
+}
 
-    .logo {
-        font-size: 2.5ch;
-        color: $seeThroughWhite;
+@media (max-width: 1024px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+
+        ul {
+            flex-direction: column;
+            width: 100%;
+
+            li {
+                text-align: center;
+                margin: 0.5rem 0;
+            }
+        }
+
+        &.burger-active {
+            display: flex;
+        }
     }
 }

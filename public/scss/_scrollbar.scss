@@ -1,5 +1,9 @@
 @import "./variable", "./mixin";
 
+::-webkit-scrollbar, ::-webkit-scrollbar-thumb {
+    box-sizing: border-box;
+}
+
 ::-webkit-scrollbar {
     width: 16px;
 }

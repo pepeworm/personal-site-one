@@ -11,6 +11,15 @@ window.onscroll = () => {
     }
 };
 
+// Navbar Hamburger Menu
+
+const hamburgerMenu = document.querySelector(".hamburger");
+const navbarLinks = document.querySelector(".navbar-links");
+
+hamburgerMenu.addEventListener("click", () => {
+    navbarLinks.classList.toggle("burger-active");
+});
+
 // Description text writer effect
 
 const text = document.querySelector(".text");
@@ -122,9 +131,9 @@ const contactInputEmailBlur = () => {
     emailForm.setAttribute("placeholder", "Email");
 };
 
-// Media Query
+// Media Query (Blob Remove)
 
-const blobRemoveSmall = (screenWidth, width) => {
+const blobRemoveSmall = (width) => {
     const blobs = document.querySelectorAll(".blob");
     if (screen.width < width) {
         for (let i = 0; i < blobs.length; i++) {
@@ -133,16 +142,9 @@ const blobRemoveSmall = (screenWidth, width) => {
     }
 };
 
-const blobRemoveSmallWidth = window.matchMedia("(max-width: 890px)");
-blobRemoveSmall(blobRemoveSmallWidth, 890);
-blobRemoveSmallWidth.addListener(blobRemoveSmall);
+blobRemoveSmall(890);
 
-const blobRemoveLarge = (
-    screenWidthMin,
-    screenWidthMax,
-    widthMin,
-    widthMax
-) => {
+const blobRemoveLarge = (widthMin, widthMax) => {
     if (screen.width >= widthMin) {
         document.querySelector(".contact-blob-one").remove();
     }
@@ -153,8 +155,4 @@ const blobRemoveLarge = (
     }
 };
 
-const blobRemoveLgMinWidth = window.matchMedia("(min-width: 1700px)");
-const blobRemoveLgMaxWidth = window.matchMedia("(min-width: 2500px)");
-blobRemoveLarge(blobRemoveLgMinWidth, blobRemoveLgMaxWidth, 1700, 2500);
-blobRemoveLgMinWidth.addListener(blobRemoveLarge);
-blobRemoveLgMaxWidth.addListener(blobRemoveLarge);
+blobRemoveLarge(1700, 2500);
