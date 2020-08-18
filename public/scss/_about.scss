@@ -51,7 +51,7 @@
 
     .about-content {
         background-color: #fff;
-        padding: 3% 5% 7% 5%;
+        padding: 1rem 0 5rem;
         color: $burningOrange;
 
         h2 {
@@ -151,7 +151,7 @@
     }
 }
 
-@media (max-width: 1050px) {    
+@media (max-width: 1050px) {
 
     .about-blob-one,
     .about-blob-two {
