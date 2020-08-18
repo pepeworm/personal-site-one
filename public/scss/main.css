@@ -943,7 +943,7 @@
 }
 
 #contact .contact-body {
-  margin-bottom: 3rem;
+  margin: 0 auto 3rem;
 }
 
 #contact .contact-body h2 {
@@ -1044,6 +1044,40 @@
 @media (max-width: 900px) {
   #contact .contact-blob-one {
     display: none;
+  }
+}
+
+@media (max-width: 380px) {
+  #contact .contact-body {
+    margin: 0 auto 3rem;
+  }
+  #contact .contact-body p {
+    margin-top: 1rem;
+  }
+  #contact .contact-body form {
+    background: #3f3d56;
+    display: inline-block;
+    margin: 2rem 0 0;
+    padding: 2.8rem 1.8rem;
+    border-radius: 0.5rem;
+  }
+  #contact .contact-body form .field {
+    display: block;
+    margin-bottom: 1.5rem;
+  }
+  #contact .contact-body form .field.bottom-field {
+    margin-bottom: 2rem;
+  }
+  #contact .contact-body form .field input {
+    border-radius: 0.3rem;
+    padding: 0.6rem 0.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    border-bottom: 2px solid #ff464b;
+    border: 1px solid white;
+  }
+  #contact .contact-body form .field input:focus {
+    outline: none;
   }
 }
 

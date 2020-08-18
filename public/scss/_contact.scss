@@ -7,8 +7,8 @@
     position: relative;
 
     .contact-body {
-        margin-bottom: 3rem;
-
+        margin: 0 auto 3rem;
+        
         h2 {
             margin: 3rem 0 0;
         }
@@ -89,6 +89,46 @@
     @media (max-width: 900px) {
         .contact-blob-one {
             display: none;
+        }
+    }
+
+    @media (max-width: 380px) {
+        .contact-body {
+            margin: 0 auto 3rem;
+
+            p {
+                margin-top: 1rem;
+            }
+
+            form {
+                background: #3f3d56;
+                display: inline-block;
+                margin: 2rem 0 0;
+                padding: 2.8rem 1.8rem;
+                border-radius: 0.5rem;
+
+                .field {
+                    display: block;
+                    margin-bottom: 1.5rem;
+
+                    &.bottom-field {
+                        margin-bottom: 2rem;
+                    }
+
+                    input {
+                        border-radius: 0.3rem;
+                        padding: 0.6rem 0.5rem;
+                        font-family: "Montserrat", sans-serif;
+                        font-size: 1rem;
+                        border-bottom: 2px solid $burningOrange;
+                        border: 1px solid white;
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                }
+            }
         }
     }
 }
