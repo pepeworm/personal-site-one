@@ -98,4 +98,30 @@
     .cursor-typing {
         animation: none;
     }
+
+    @media (max-width: 430px) {
+        h1 {
+            font-size: 6ch;
+        }
+    }
+
+    @media (max-width: 370px) {
+        h1 {
+            font-size: 5.5ch;
+        }
+
+        p {
+            font-size: 2.5ch;
+        }
+    }
+
+    @media (max-width: 340px) {
+        h1 {
+            font-size: 5ch;
+        }
+
+        p {
+            font-size: 2.3ch;
+        }
+    }
 }

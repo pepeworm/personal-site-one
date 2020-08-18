@@ -118,6 +118,30 @@
           animation: none;
 }
 
+@media (max-width: 430px) {
+  .head-container h1 {
+    font-size: 6ch;
+  }
+}
+
+@media (max-width: 370px) {
+  .head-container h1 {
+    font-size: 5.5ch;
+  }
+  .head-container p {
+    font-size: 2.5ch;
+  }
+}
+
+@media (max-width: 340px) {
+  .head-container h1 {
+    font-size: 5ch;
+  }
+  .head-container p {
+    font-size: 2.3ch;
+  }
+}
+
 .navbar-scroll {
   -webkit-transition: background 500ms ease-in;
   transition: background 500ms ease-in;
