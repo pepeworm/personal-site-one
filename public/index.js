@@ -130,32 +130,3 @@ const contactInputEmailFocus = () => {
 const contactInputEmailBlur = () => {
     emailForm.setAttribute("placeholder", "Email");
 };
-
-// Media Query (Blob Remove)
-
-// const blobRemoveSmall = (lgWidth, smWidth) => {
-//     const blobs = document.querySelectorAll(".blob");
-//     if (screen.width <= lgWidth) {
-//         document.querySelector(".about-blob-one").remove();
-//         document.querySelector(".about-blob-two").remove();
-//     } 
-    
-//     if (screen.width <= smWidth) {
-//         document.querySelector(".contact-blob-one").remove();
-//     }
-// };
-
-// blobRemoveSmall(1050, 900);
-
-const blobRemoveLarge = (widthMin, widthMax) => {
-    if (screen.width >= widthMin) {
-        document.querySelector(".contact-blob-one").remove();
-    }
-
-    if (screen.width >= widthMax) {
-        document.querySelector(".about-blob-one").remove();
-        document.querySelector(".about-blob-two").remove();
-    }
-};
-
-blobRemoveLarge(1700, 2500);

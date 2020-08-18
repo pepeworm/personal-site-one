@@ -1,38 +1,19 @@
 @import "./variable", "./mixin";
 
 #projects {
+
+    // Default
+
     position: relative;
     margin-top: 2rem;
     margin-bottom: 5rem;
-
-    // General
-
-    h2 {
-        margin: 5rem 0 0;
-    }
-
-    h3 {
-        margin: 0 0 1rem 0;
-    }
-
-    p {
-        margin: 2rem 0 7rem 0;
-    }
-
-    hr {
-        margin: 6rem auto;
-        width: 10%;
-        border-style: dotted;
-        border-width: 0 0 0.5rem 0;
-        border-color: $seeThroughWhite;
-    }
 
     // Right Project Container
 
     .project-container.right {
         padding: 0 8rem;
         display: flex;
-        flex-direction: row;
+        justify-content: center;
         align-items: center;
 
         img {
@@ -103,6 +84,7 @@
         padding: 0 8rem;
         display: flex;
         flex-direction: row-reverse;
+        justify-content: center;
         align-items: center;
 
         img {
@@ -171,5 +153,205 @@
         img {
             border: 1px solid white;
         }
+    }
+
+    // }
+
+    // Media Query (Top-Bottom positions)
+
+    @media (max-width: 1040px) {
+        position: relative;
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+
+        // Right Project Container
+
+        .project-container.left,
+        .project-container.right {
+            padding: 0 8rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                display: inline-block;
+                width: 23rem;
+                height: 12rem;
+                margin: 0 auto 1.5rem;
+            }
+
+            .project-container-body {
+                margin: auto;
+                text-align: center;
+
+                p {
+                    display: inline-block;
+                    margin: 0 0 1rem 0;
+                    font-size: 1.4rem;
+
+                    &.site-description {
+                        margin: 0 0 1rem 0;
+                        font-size: 1.55rem;
+                        font-weight: 500;
+                        max-width: 85%;
+                    }
+
+                    &.lang-used,
+                    .lang {
+                        color: rgba(white, 0.8);
+                        margin-bottom: 1.3rem;
+                    }
+                }
+
+                a {
+                    display: block;
+                    color: white;
+                    font-size: 1.3rem;
+                    border: 1px solid white;
+                    padding: 0.5rem 0.8rem;
+                    border-radius: 0.3rem;
+                    width: 12rem;
+                    margin: auto;
+                }
+            }
+        }
+    }
+
+    // Large Screen Sizes
+
+    @media (min-width: 2400px) {
+        position: relative;
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+
+        // Right Project Container
+
+        .project-container.left,
+        .project-container.right {
+            padding: 0 8rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                display: inline-block;
+                width: 33rem;
+                height: 17rem;
+                margin: 0 auto 1.5rem;
+            }
+
+            .project-container-body {
+                margin: auto;
+                text-align: center;
+
+                p {
+                    display: inline-block;
+                    margin: 0 0 1.5rem 0;
+                    font-size: 1.4rem;
+
+                    &.site-description {
+                        margin: 0 0 1.3rem 0;
+                        font-size: 1.55rem;
+                        font-weight: 500;
+                    }
+
+                    &.lang-used,
+                    .lang {
+                        color: rgba(white, 0.8);
+                    }
+                }
+
+                a {
+                    display: block;
+                    color: white;
+                    font-size: 1.3rem;
+                    border: 1px solid white;
+                    padding: 0.5rem 0.8rem;
+                    border-radius: 0.3rem;
+                    width: 12rem;
+                    margin: auto;
+                }
+            }
+        }
+    }
+
+    // Small Screen Sizes
+
+    @media (max-width: 420px) {
+
+        .project-container.left,
+        .project-container.right {
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                max-width: 17rem;
+                max-height: 9rem;
+                margin: 0 auto 1.5rem;
+            }   
+
+            .project-container-body {
+                margin: auto;
+                text-align: center;
+
+                p {
+                    display: inline-block;
+                    margin: 0 0 1rem 0;
+                    font-size: 1.4rem;
+                    max-width: 90%;
+
+                    &.site-description {
+                        margin: 0 0 1.2rem 0;
+                        font-size: 1.55rem;
+                        font-weight: 500;
+                        max-width: 85%;
+                    }
+
+                    &.lang-used,
+                    .lang {
+                        color: rgba(white, 0.8);
+                        margin-bottom: 1.6rem;
+                    }
+                }
+
+                a {
+                    display: block;
+                    color: white;
+                    font-size: 1.3rem;
+                    border: 1px solid white;
+                    padding: 0.5rem 0.8rem;
+                    border-radius: 0.3rem;
+                    width: 12rem;
+                    margin: auto;
+                }
+            }
+        }
+    }
+
+    // Things to be kept the same
+
+    h2 {
+        margin: 5rem 0 0;
+    }
+
+    h3 {
+        margin: 0 0 1rem 0;
+    }
+
+    p {
+        margin: 2rem 0 7rem 0;
+    }
+
+    hr {
+        margin: 6rem auto;
+        width: 10%;
+        border-style: dotted;
+        border-width: 0 0 0.5rem 0;
+        border-color: $seeThroughWhite;
     }
 }
