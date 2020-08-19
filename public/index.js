@@ -112,16 +112,31 @@ var spy = new Gumshoe("#navbar ul li a");
 
 // Contact form :focus functionality
 
-const nameForm = document.querySelector(".nameField");
+const firstNameForm = document.querySelector(".firstNameField");
+const lastNameForm = document.querySelector(".lastNameField");
 const emailForm = document.querySelector(".emailField");
 
-const contactInputNameFocus = () => {
-    nameForm.removeAttribute("placeholder");
+// First Name Field
+
+const contactInputFirstNameFocus = () => {
+    firstNameForm.removeAttribute("placeholder");
 };
 
-const contactInputNameBlur = () => {
-    nameForm.setAttribute("placeholder", "Name");
+const contactInputFirstNameBlur = () => {
+    firstNameForm.setAttribute("placeholder", "First Name");
 };
+
+// Last Name Field
+
+const contactInputLastNameFocus = () => {
+    lastNameForm.removeAttribute("placeholder");
+};
+
+const contactInputLastNameBlur = () => {
+    lastNameForm.setAttribute("placeholder", "Last Name");
+};
+
+// Email Field
 
 const contactInputEmailFocus = () => {
     emailForm.removeAttribute("placeholder");

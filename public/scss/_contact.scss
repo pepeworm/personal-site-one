@@ -8,7 +8,7 @@
 
     .contact-body {
         margin: 0 auto 3rem;
-        
+
         h2 {
             margin: 3rem 0 0;
         }
@@ -63,30 +63,35 @@
         position: absolute;
         display: inline-block;
         width: 14rem;
-        top: 10%;
+        top: 15%;
         left: 2%;
-
         animation: contactBlobMovementOne 3500ms infinite;
     }
 
     @keyframes contactBlobMovementOne {
         0% {
-            top: 10%;
+            top: 15%;
             transform: scale(1);
         }
 
         50% {
-            top: 11%;
+            top: 16%;
             transform: scale(1.05);
         }
 
         100% {
-            top: 10%;
+            top: 15%;
             transform: scale(1);
         }
     }
 
-    @media (max-width: 900px) {
+    @media (max-width: 1100px) {
+        .contact-blob-one {
+            width: 11rem;
+        }
+    }
+
+    @media (max-width: 950px) {
         .contact-blob-one {
             display: none;
         }
