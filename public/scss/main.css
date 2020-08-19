@@ -1216,8 +1216,8 @@ footer#others ul li a {
 .success {
   height: 100vh;
   width: 100vw;
-  background: -webkit-gradient(linear, left top, right top, from(#02aab0), to(#00cdac));
-  background: linear-gradient(to right, #02aab0, #00cdac);
+  background: -webkit-gradient(linear, left top, right top, from(#0eb38f), to(#00cdac));
+  background: linear-gradient(to right, #0eb38f, #00cdac);
 }
 
 .success .success-body {
