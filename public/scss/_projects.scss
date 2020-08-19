@@ -55,7 +55,7 @@
 
                 &.btn {
                     box-sizing: border-box;
-                    transition: color 200ms linear;
+                    transition: color 200ms linear, background 200ms linear;
                 }
 
                 &.btn:hover {
@@ -125,7 +125,7 @@
                 margin: 0 0 0 0.8rem;
 
                 &.btn {
-                    transition: color 200ms linear;
+                    transition: color 200ms linear, background 200ms linear;
                 }
 
                 &.btn:hover {

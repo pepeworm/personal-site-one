@@ -5,15 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Error</title>
+
+    <!-- Favicon -->
+
+    <link rel="icon" href="./images/favicon.PNG">
+
+    <!-- Google Fonts -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!---CSS -->
+
     <link rel="stylesheet" href="./scss/main.css">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="error-body">
-        <h1>Error</h1>
-        <p>There was an error with the contact form. Please try again</p>
+    <div class="error">
+        <div class="error-body">
+            <h1>Error</h1>
+            <p class="error-msg">There was an error with the contact form.</p>
 
-        
+            <form action="mailto:pepeworm0@gmail.com" class="try-again" method="POST" enctype="text/plain">
+                <p class="option-msg">Please try again or</p>
+                <button type="submit">contact me here</button>
+            </form>
+
+            <form action="/error" class="error-return" method="POST">
+                <button type="submit" class="return-btn btn"><i class="fas fa-arrow-circle-left"></i> Back to Website</button>
+            </form>
+        </div>
     </div>
 </body>
 
