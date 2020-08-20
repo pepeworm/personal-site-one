@@ -1,0 +1,228 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#d31027), to(#ea384d));
+  background: linear-gradient(to right, #d31027, #ea384d);
+  font-family: "Raleway", sans-serif;
+}
+
+.error .error-body {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.error .error-body h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 7ch;
+  margin-bottom: 1.6rem;
+  color: #fff;
+}
+
+.error .error-body p {
+  margin-bottom: 0.7rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.error .error-body p.error-msg {
+  font-size: 2ch;
+  text-align: center;
+  color: #fff;
+  display: inline-block;
+}
+
+.error .error-body p.option-msg {
+  font-size: 2ch;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+}
+
+.error .error-body button {
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  border-bottom: 2px solid #fff;
+  background: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 2ch;
+}
+
+.error .error-body button.return-btn {
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #fff;
+  background: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8ch;
+  font-weight: 400;
+  padding: 0.4rem;
+  border-radius: 0.3rem;
+  margin-top: 1.4rem;
+  -webkit-transition: color 200ms linear, background 200ms linear;
+  transition: color 200ms linear, background 200ms linear;
+}
+
+.error .error-body button.return-btn:hover {
+  color: #df243a;
+  background: #fff;
+}
+
+@media (max-width: 375px) {
+  .error .error-body {
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .error .error-body h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 7ch;
+    margin-bottom: 1.6rem;
+    color: #fff;
+  }
+  .error .error-body p {
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .error .error-body p.error-msg {
+    font-size: 1.7ch;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+  }
+  .error .error-body p.option-msg {
+    font-size: 1.7ch;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+  }
+  .error .error-body button {
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background: none;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.7ch;
+  }
+  .error .error-body button.return-btn {
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #fff;
+    background: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.7ch;
+    font-weight: 400;
+    padding: 0.4rem;
+    border-radius: 0.3rem;
+    margin-top: 1rem;
+    -webkit-transition: color 200ms linear, background 200ms linear;
+    transition: color 200ms linear, background 200ms linear;
+  }
+  .error .error-body button.return-btn:hover {
+    color: #df243a;
+    background: #fff;
+  }
+}
+
+@media (max-width: 330px) {
+  .error .error-body {
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .error .error-body h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 7ch;
+    margin-bottom: 1.6rem;
+    color: #fff;
+  }
+  .error .error-body p {
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .error .error-body p.error-msg {
+    font-size: 1.55ch;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+  }
+  .error .error-body p.option-msg {
+    font-size: 1.55ch;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+  }
+  .error .error-body button {
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background: none;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.55ch;
+  }
+  .error .error-body button.return-btn {
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #fff;
+    background: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.55ch;
+    font-weight: 400;
+    padding: 0.4rem;
+    border-radius: 0.3rem;
+    margin-top: 1rem;
+    -webkit-transition: color 200ms linear, background 200ms linear;
+    transition: color 200ms linear, background 200ms linear;
+  }
+  .error .error-body button.return-btn:hover {
+    color: #df243a;
+    background: #fff;
+  }
+}
+/*# sourceMappingURL=error.css.map */

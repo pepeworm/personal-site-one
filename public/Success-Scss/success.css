@@ -1,0 +1,173 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#0eb38f), to(#00cdac));
+  background: linear-gradient(to right, #0eb38f, #00cdac);
+  font-family: "Raleway", sans-serif;
+}
+
+.success .success-body {
+  width: 100vw;
+  height: 95vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.success .success-body h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 7ch;
+  margin-bottom: 1.6rem;
+  color: #fff;
+}
+
+.success .success-body p {
+  font-size: 2ch;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 0.7rem;
+  color: #fff;
+}
+
+.success .success-body .success-return button[type=submit] {
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #fff;
+  background: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8ch;
+  font-weight: 400;
+  padding: 0.4rem;
+  border-radius: 0.3rem;
+  margin-top: 1rem;
+  -webkit-transition: color 200ms linear, background 200ms linear;
+  transition: color 200ms linear, background 200ms linear;
+}
+
+.success .success-body .success-return button[type=submit]:hover {
+  color: #07c09e;
+  background: #fff;
+}
+
+@media (max-width: 470px) {
+  .success .success-body {
+    width: 100vw;
+    height: 95vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .success .success-body h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 6ch;
+    margin-bottom: 1.6rem;
+    color: #fff;
+  }
+  .success .success-body p {
+    font-size: 1.8ch;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 0.6rem;
+    color: #fff;
+    max-width: 80%;
+  }
+  .success .success-body .success-return button[type=submit] {
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #fff;
+    background: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8ch;
+    font-weight: 400;
+    padding: 0.4rem;
+    border-radius: 0.3rem;
+    margin-top: 1rem;
+    -webkit-transition: color 200ms linear, background 200ms linear;
+    transition: color 200ms linear, background 200ms linear;
+  }
+  .success .success-body .success-return button[type=submit]:hover {
+    color: #07c09e;
+    background: #fff;
+  }
+}
+
+@media (max-width: 340px) {
+  .success .success-body {
+    width: 100vw;
+    height: 95vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .success .success-body h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 5.3ch;
+    margin-bottom: 1.6rem;
+    color: #fff;
+  }
+  .success .success-body p {
+    font-size: 1.7ch;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 0.6rem;
+    color: #fff;
+    max-width: 80%;
+  }
+  .success .success-body .success-return button[type=submit] {
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #fff;
+    background: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6ch;
+    font-weight: 400;
+    padding: 0.4rem;
+    border-radius: 0.3rem;
+    margin-top: 1rem;
+    -webkit-transition: color 200ms linear, background 200ms linear;
+    transition: color 200ms linear, background 200ms linear;
+  }
+  .success .success-body .success-return button[type=submit]:hover {
+    color: #07c09e;
+    background: #fff;
+  }
+}
+/*# sourceMappingURL=success.css.map */
