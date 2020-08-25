@@ -192,6 +192,7 @@
 }
 
 .navbar .navbar-links ul li {
+  letter-spacing: 0.5px;
   list-style: none;
 }
 
@@ -260,6 +261,7 @@
     width: 100%;
   }
   .navbar-links ul li {
+    letter-spacing: 0.5cm;
     text-align: center;
     margin: 0.5rem 0;
   }
