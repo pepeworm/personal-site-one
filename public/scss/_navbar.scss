@@ -50,6 +50,12 @@
             li {
                 list-style: none;
 
+                &.active {
+                    a {
+                        color: #fff;
+                    }
+                }
+
                 a {
                     color: $seeThroughWhite;
                     padding: 0 1rem;

@@ -195,6 +195,10 @@
   list-style: none;
 }
 
+.navbar .navbar-links ul li.active a {
+  color: #fff;
+}
+
 .navbar .navbar-links ul li a {
   color: rgba(255, 255, 255, 0.6);
   padding: 0 1rem;

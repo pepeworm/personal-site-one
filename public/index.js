@@ -1,3 +1,5 @@
+// jshint esversion:6
+
 // Navbar scroll color change
 
 const navbar = document.querySelector("nav");
@@ -108,7 +110,7 @@ const scroll = new SmoothScroll('a[href*="#"]', {
 
 // Scroll Spy
 
-var spy = new Gumshoe("#navbar ul li a");
+let spy = new Gumshoe("nav ul li a");
 
 // Contact form :focus functionality
 
