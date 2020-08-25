@@ -53,6 +53,7 @@
                 a {
                     color: $seeThroughWhite;
                     padding: 0 1rem;
+                    transition: color 100ms ease-in;
 
                     &:hover {
                         color: #fff;
@@ -81,32 +82,6 @@
         height: 3px;
         width: 100%;
         background: rgba(white, 0.5);
-
-        .bar-one:active, .bar-two:active, .bar-three:active {
-            animation: hamburgerCross 500ms ease-in;
-        }
-
-        @keyframes hamburgerCross {
-            0% {    
-                .bar-one {
-                    transform: rotate(0deg);
-                }
-
-                .bar-three {
-                    transform: rotate(0deg);
-                }
-            }
-
-            100% {
-                .bar-one {
-                    transform: rotate(90deg);
-                }
-
-                .bar-three {
-                    transform: rotate(-90deg);
-                }
-            }
-        }
     }
 }
 

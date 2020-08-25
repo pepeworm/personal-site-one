@@ -198,6 +198,8 @@
 .navbar .navbar-links ul li a {
   color: rgba(255, 255, 255, 0.6);
   padding: 0 1rem;
+  -webkit-transition: color 100ms ease-in;
+  transition: color 100ms ease-in;
 }
 
 .navbar .navbar-links ul li a:hover {
@@ -225,57 +227,6 @@
   height: 3px;
   width: 100%;
   background: rgba(255, 255, 255, 0.5);
-}
-
-.hamburger .bar .bar-one:active, .hamburger .bar .bar-two:active, .hamburger .bar .bar-three:active {
-  -webkit-animation: hamburgerCross 500ms ease-in;
-          animation: hamburgerCross 500ms ease-in;
-}
-
-@-webkit-keyframes hamburgerCross {
-  0% {
-    .bar-one {
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg);
-    }
-    .bar-three {
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg);
-    }
-  }
-  100% {
-    .bar-one {
-      -webkit-transform: rotate(90deg);
-              transform: rotate(90deg);
-    }
-    .bar-three {
-      -webkit-transform: rotate(-90deg);
-              transform: rotate(-90deg);
-    }
-  }
-}
-
-@keyframes hamburgerCross {
-  0% {
-    .bar-one {
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg);
-    }
-    .bar-three {
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg);
-    }
-  }
-  100% {
-    .bar-one {
-      -webkit-transform: rotate(90deg);
-              transform: rotate(90deg);
-    }
-    .bar-three {
-      -webkit-transform: rotate(-90deg);
-              transform: rotate(-90deg);
-    }
-  }
 }
 
 @media (max-width: 1024px) {
@@ -440,6 +391,8 @@
   color: #ff464b;
   font-weight: 500;
   font-size: 1.2rem;
+  -webkit-transition: background 300ms linear, color 300ms linear;
+  transition: background 300ms linear, color 300ms linear;
 }
 
 #about .about-content a.btn:hover {
