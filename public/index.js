@@ -147,3 +147,17 @@ const contactInputEmailFocus = () => {
 const contactInputEmailBlur = () => {
     emailForm.setAttribute("placeholder", "Email");
 };
+
+// Age
+
+const age = document.querySelector(".age");
+const ageCalculation = new Date().getFullYear() - 2007;
+
+age.textContent = ageCalculation;
+
+// Copyright Year
+
+const copyrightYear = document.querySelector(".copyrightYear");
+const year = new Date().getFullYear();
+
+copyrightYear.textContent = year;
