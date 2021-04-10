@@ -1,5 +1,4 @@
 # Ignore
 
-.env
 .vscode/*
 node_modules/
